@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/devfaoed/zoom-Bot/issues"
   },
-  "homepage": "https://github.com/devfaoed/zoom-Bot#readme"
+  "homepage": "https://github.com/devfaoed/zoom-Bot#readme",
+  "dependencies": {
+    "@google-cloud/speech": "^5.5.0",
+    "nodemon": "^2.0.22",
+    "openai": "^3.3.0",
+    "uuid": "^9.0.0",
+    "zoomus": "^0.1.4"
+  }
 }
