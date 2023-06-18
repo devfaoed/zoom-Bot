@@ -34,7 +34,6 @@ async function joinGoogleMeet(meetingLink) {
 // Run the following command:
 // npm install @google-cloud/speech
 
-const { SpeechClient } = require('@google-cloud/speech');
 
 // Create a Speech-to-Text client
 const speechClient = new SpeechClient();
@@ -65,8 +64,8 @@ async function convertAudioToText(audioData) {
 }
 
 // Example usage
-const audioData = /* Provide the audio data */;
-const transcription = await convertAudioToText(audioData);
+const audioData = /* Provide the audio data */
+transcription =  convertAudioToText(audioData);
 console.log('Transcription:', transcription);
 
 
@@ -74,10 +73,8 @@ console.log('Transcription:', transcription);
 // Run the following command:
 // npm install openai
 
-const openai = require('openai');
-
 // Set up your OpenAI API key
-const openaiApiKey = 'YOUR_OPENAI_API_KEY';
+const openaiApiKey = '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';
 openai.apiKey = openaiApiKey;
 
 // Function to generate a GPT response
@@ -97,7 +94,7 @@ async function generateGptResponse(inputText) {
 
 // Example usage
 const inputText = 'Text from speech-to-text conversion';
-const gptResponse = await generateGptResponse(inputText);
+const gptResponse =  generateGptResponse(inputText);
 console.log('GPT Response:', gptResponse);
 
 
@@ -126,11 +123,11 @@ async function convertTextToSpeech(text) {
 
 // Example usage
 const text = 'Text generated from GPT response';
-const audioContent = await convertTextToSpeech(text);
+const audioContent =  convertTextToSpeech(text);
 // Pass the audioContent to the virtual audio device for playback in Google Meet
 
 
 // Example usage
-const meetingLink = 'YOUR_GOOGLE_MEET_LINK';
+const meetingLink = 'https://meet.google.com/aha-icaw-xcs';
 
 joinGoogleMeet(meetingLink);
