@@ -11,7 +11,8 @@ const speechClient = new SpeechClient();
 const openaiApiKey = "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";
 
 // Google Meet URL
-const meetingLink = "https://meet.google.com/hcd-tiyg-qnd";
+// input google meet meeting link here
+const meetingLink = "";
 
 // Function to enter a Google Meet meeting
 async function enterGoogleMeet() {
